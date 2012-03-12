@@ -1,0 +1,2 @@
+
+function c { cd ~/dev/repos/$1; }
