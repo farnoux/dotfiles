@@ -4,6 +4,9 @@
 
 *~
 
+# Jekyll generated site
+_site/
+
 # Java and eclipse stuff
 *.class
 .classpath
