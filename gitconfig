@@ -1,0 +1,22 @@
+[alias]
+  co = checkout
+  st = status
+  unadd = reset HEAD
+  c = commit
+  info = "remote -v"
+  l = "log --stat --summary"
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = subl
+  autocrlf = input
+[apply]
+  whitespace = nowarn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[push]
+  default = matching
