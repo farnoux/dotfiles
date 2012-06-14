@@ -13,3 +13,6 @@ _site/
 .project
 .settings
 target/
+
+# Node
+node_modules
