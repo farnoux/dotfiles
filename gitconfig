@@ -12,7 +12,7 @@
   ui = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = subl
+  editor = subl -w
   autocrlf = input
 [apply]
   whitespace = nowarn
