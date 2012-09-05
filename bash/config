@@ -6,7 +6,7 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 
 #export PS1="\w$ "
 #export PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '
-export PS1='[\[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]]\$ '
+export PS1='\[\e[0;37m\][\[\033[1;35m\]\W$(__git_ps1 " \[\033[1;34m\](%s)")\[\033[0m\]\[\e[0;37m\]] ☼\[\033[0m\]  '
 
 export EDITOR='subl -w'
 export MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=128m'
