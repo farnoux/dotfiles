@@ -12,8 +12,10 @@
   ui = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = subl -w
+  editor = vim
   autocrlf = input
+	ignorecase = true
+	trustctime = false
 [apply]
   whitespace = nowarn
 [format]
@@ -21,4 +23,26 @@
 [push]
   default = matching
 [rerere]
-	enabled = 1
+	enabled = false
+[user]
+	name = Fred
+	email = fred@iadvize.com
+[gui]
+	fontdiff = -family \"Source Code Pro\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = diffmerge
+	algorithm = patience
+[difftool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE
+[help]
+	autocorrect = 1
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

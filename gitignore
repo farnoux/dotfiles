@@ -16,3 +16,15 @@ target/
 
 # Node
 node_modules
+
+# Sublime
+sftp-config.json
+
+# Misc
+_sandbox/
+
+Guardfile
+Capfile
+
+# Pow
+.powrc
