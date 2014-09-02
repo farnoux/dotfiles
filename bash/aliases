@@ -11,7 +11,11 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # misc
-alias ..="cd .."
-alias reload='. ~/.bashrc'
+alias reload='. ~/.zshrc'
 alias ports="sudo lsof -iTCP -sTCP:LISTEN -P"
 alias pubkey="more ~/.ssh/id_rsa.public | pbcopy | echo '=> Public key copied to clipboard.'"
+
+alias tunneldev="ssh -v -N devtunnel"
+alias tunneldatamining="ssh -v -N dataminingtunnel"
+alias tunneloxa="ssh -v -N oxatunnel"
+alias tunnelikoula="ssh -v -N ikoulatunnel"
